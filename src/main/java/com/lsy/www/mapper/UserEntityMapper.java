@@ -22,7 +22,7 @@ public interface UserEntityMapper {
      * @param id
      * @return 返回被影响的行数
      */
-    int deleteUserById(int id);
+    int deleteUserById(Long id);
 
     /**
      * 更新一个用户
@@ -36,7 +36,7 @@ public interface UserEntityMapper {
      * @param id
      * @return
      */
-    UserEntity getUserById(int id);
+    UserEntity getUserById(Long id);
 
     /**
      * 根据条件查找多个用户

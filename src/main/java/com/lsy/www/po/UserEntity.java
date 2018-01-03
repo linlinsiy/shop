@@ -8,9 +8,30 @@ public class UserEntity {
     private Long id;            // 编号
     private String userName;    // 用户名
     private String password;    // 密码
-    private String truename;    //真名
+    private String trueName;    //真名
     private String addr;    //地址
     private String phone;   //电话
+
+    public UserEntity() {
+    }
+
+    public UserEntity(Long id) {
+        this.id = id;
+    }
+
+    public UserEntity(String userName, String password) {
+        this.userName = userName;
+        this.password = password;
+    }
+
+    public UserEntity(String userName, String password, String trueName, String addr, String phone) {
+        this.id = id;
+        this.userName = userName;
+        this.password = password;
+        this.trueName = trueName;
+        this.addr = addr;
+        this.phone = phone;
+    }
 
     public Long getId() {
         return id;
@@ -36,12 +57,12 @@ public class UserEntity {
         this.password = password;
     }
 
-    public String getTruename() {
-        return truename;
+    public String getTrueName() {
+        return trueName;
     }
 
-    public void setTruename(String truename) {
-        this.truename = truename;
+    public void setTrueName(String trueName) {
+        this.trueName = trueName;
     }
 
     public String getAddr() {
@@ -66,7 +87,7 @@ public class UserEntity {
                 "id=" + id +
                 ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                ", truename='" + truename + '\'' +
+                ", trueName='" + trueName + '\'' +
                 '}';
     }
 }

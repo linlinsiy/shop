@@ -24,7 +24,7 @@ public class UserServiceImpl implements UserService {
         return mapper.insertUser(userEntity);
     }
 
-    public int deleteUserById(int id) {
+    public int deleteUserById(Long id) {
         return mapper.deleteUserById(id);
     }
 
@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
         return mapper.updateUserById(userEntity);
     }
 
-    public UserEntity getUserById(int id) {
+    public UserEntity getUserById(Long id) {
         return mapper.getUserById(id);
     }
 
