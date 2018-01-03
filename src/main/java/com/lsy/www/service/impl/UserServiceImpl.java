@@ -20,6 +20,26 @@ public class UserServiceImpl implements UserService {
     private UserEntityMapper mapper;
 
 
+    public int insertUser(UserEntity userEntity) {
+        return mapper.insertUser(userEntity);
+    }
+
+    public int deleteUserById(int id) {
+        return mapper.deleteUserById(id);
+    }
+
+    public int updateUserById(UserEntity userEntity) {
+        return mapper.updateUserById(userEntity);
+    }
+
+    public UserEntity getUserById(int id) {
+        return mapper.getUserById(id);
+    }
+
+    public List<UserEntity> getUsersByConditions(UserEntity userEntity) {
+        return mapper.getUsersByConditions(userEntity);
+    }
+
     public List<UserEntity> getAllUsers() {
         return mapper.getAllUsers();
     }
